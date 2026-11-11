@@ -20,12 +20,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 24, cache: npm }
+        with: { node-version: 24, cache: pnpm }
       - uses: powerhouse-inc/vetra-publish@v1
         with:
           app-id: 96e56853-7041-4c32-a8f7-e9cc8afb50d4
           # This canary is a staging app.
           vetra-url: https://switchboard.staging.vetra.io
-          install-command: npm ci
-          build-command: npm run build
