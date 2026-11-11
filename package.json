@@ -1,0 +1,10 @@
+{
+  "name": "@powerhousedao/vetra-publish-canary",
+  "version": "0.1.0",
+  "description": "Canary app for vetra-publish end-to-end release tests",
+  "license": "AGPL-3.0-only",
+  "files": ["index.js"],
+  "main": "index.js",
+  "scripts": { "build": "node -e \"console.log('build ok')\"" },
+  "dependencies": { "@powerhousedao/ph-cli": "6.2.3" }
+}
