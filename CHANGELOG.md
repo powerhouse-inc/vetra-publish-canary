@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/powerhouse-inc/vetra-publish-canary/compare/v1.0.0...v1.1.0) (2026-11-12)
+
+
+### Features
+
+* /version shows the running release ([#4](https://github.com/powerhouse-inc/vetra-publish-canary/issues/4)) ([468df1c](https://github.com/powerhouse-inc/vetra-publish-canary/commit/468df1c9f7955b951e95cadc777cbfa47e05a5ce))
+
 ## 1.0.0 (2026-11-12)
 
 
