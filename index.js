@@ -17,6 +17,11 @@ if (require.main === module) {
   }
   http
     .createServer((req, res) => {
+      if (req.url === "/version") {
+        res.setHeader("content-type", "application/json");
+        res.end(JSON.stringify({ version: require("./package.json").version }));
+        return;
+      }
       if (req.url === "/settings") {
         res.setHeader("content-type", "application/json");
         res.end(
