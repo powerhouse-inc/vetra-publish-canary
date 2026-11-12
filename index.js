@@ -1,5 +1,3 @@
-// Deliberately broken build for the health/revert staging test.
-throw new Error("canary crash test");
 // A tiny long-running host for the vetra-publish canary: answers HTTP on
 // PORT (the instance chart probes / on 6540).
 const http = require("node:http");
