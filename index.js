@@ -6,6 +6,9 @@ const port = 6540;
 module.exports = { canary: true };
 if (require.main === module) {
   http
-    .createServer((_req, res) => res.end(`vetra-publish canary ${process.env.npm_package_version ?? ""}\n`))
+    .createServer((_req, res) => {
+      res.setHeader("content-type", "text/html; charset=utf-8");
+      res.end("<!doctype html><title>canary</title><p>vetra-publish canary</p>\n");
+    })
     .listen(port, () => console.log(`canary listening on ${port}`));
 }
